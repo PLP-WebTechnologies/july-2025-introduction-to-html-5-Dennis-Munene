@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn essential HTML5 semantic markup with accessibility and SEO best practices for modern web development">
+    <meta name="keywords" content="HTML5, Semantic HTML, Web Accessibility, SEO Basics, Web Development">
+    <title> Accessibility and SEO Basics</title>
+
+</head>
+<body>
+    <!-- Skip navigation for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Semantic page header -->
+    <header role="banner">
+        <h1>HTML5 Web Fundamentals</h1>
+        <p>Building accessible, SEO-friendly websites with semantic elements</p>
+        
+        <!-- Primary navigation -->
+        <nav aria-label="Main Navigation">
+            <h2 class="visually-hidden">Main Menu</h2>
+            <ul>
+                <li><a href="#semantics">Semantic HTML</a></li>
+                <li><a href="#accessibility">Accessibility</a></li>
+                <li><a href="#seo">SEO Basics</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main id="main-content" role="main">
+        <!-- Introduction section -->
+        <section id="intro" aria-labelledby="intro-heading">
+            <h2 id="intro-heading">Modern Web Development Essentials</h2>
+            <p>HTML5 provides semantic elements that improve document structure, accessibility, and search engine visibility.</p>
+            
+               <img src="html5.jpg" alt="HTML5 icon" width="600" height="300">
+            
+        </section>
+
+        <!-- Semantic HTML section -->
+        <article id="semantics" aria-labelledby="semantics-heading">
+            <h2 id="semantics-heading">Semantic HTML5 Elements</h2>
+            <p>Semantic elements clearly describe their meaning to both browsers/machines and developers</p>
+            
+            <section aria-labelledby="elements-heading">
+                <h3 id="elements-heading">Key Semantic Elements</h3>
+                <dl>
+                    <dt><code>&lt;header&gt;</code></dt>
+                    <dd>Container for introductory content or navigation</dd>
+                    
+                    <dt><code>&lt;nav&gt;</code></dt>
+                    <dd>Contains major navigation blocks</dd>
+                    
+                    <dt><code>&lt;main&gt;</code></dt>
+                    <dd>Holds the primary content of the document</dd>
+                    
+                    <dt><code>&lt;article&gt;</code></dt>
+                    <dd>Self-contained composition (blog post, news article)</dd>
+                    
+                    <dt><code>&lt;section&gt;</code></dt>
+                    <dd>Thematic grouping of content</dd>
+                    
+                    <dt><code>&lt;footer&gt;</code></dt>
+                    <dd>Contains footer information for its section</dd>
+                </dl>
+            </section>
+        </article>
+
+        <!-- Accessibility section -->
+        <article id="accessibility" aria-labelledby="a11y-heading">
+            <h2 id="a11y-heading">Web Accessibility Practices</h2>
+            <p>Making web content accessible to people with disabilities:</p>
+            
+            <section aria-labelledby="aria-heading">
+                <h3 id="aria-heading">ARIA Landmarks</h3>
+                <ul>
+                    <li>Use <strong>natural landmarks</strong> (header, nav, main) when possible</li>
+                    <li>Supplement with ARIA roles when native semantics are insufficient</li>
+                    <li>Ensure keyboard navigability and visible focus states</li>
+                </ul>
+            </section>
+        </article>
+
+        <!-- SEO section -->
+        <article id="seo" aria-labelledby="seo-heading">
+            <h2 id="seo-heading">SEO Fundamentals</h2>
+           
+            <section aria-labelledby="onpage-heading">
+                <h3 id="onpage-heading">On-Page SEO Techniques</h3>
+                <ol>
+                    <li>Use descriptive, keyword-rich title tags</li>
+                    <li>Create meaningful meta descriptions</li>
+                    
+                </ol>
+            </section>
+        </article>
+
+        <!-- Resources section -->
+        <aside id="resources" aria-labelledby="resources-heading">
+            <h2 id="resources-heading">Learning Resources</h2>
+            <ul>
+                <li><a href="https://www.w3.org/WAI/" rel="noopener noreferrer">W3C Web Accessibility Initiative</a></li>
+                <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp" rel="noopener noreferrer">W3schools HTML</a></li>
+                
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Page footer -->
+    <footer role="contentinfo">
+        <p>&copy; 2025 Web Development Essentials. All rights reserved.</p>
+        <p>Contact: <a href="mailto:dmunene20201@gmail.com">dmunene20201@.com</a></p>
+      
+    </footer>
+</body>
+</html>
